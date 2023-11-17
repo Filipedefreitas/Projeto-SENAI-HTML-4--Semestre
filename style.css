@@ -76,6 +76,7 @@ h3{
   max-width: 900px; /* Define a largura máxima do container */
   margin: 0 auto; /* Centraliza o container horizontalmente na página */
   padding: 90px; /* Adiciona espaçamento interno ao container */
+  text-align: left;
   background-color: #ffffff; /* Cor de fundo do container (apenas para visualização) */
 
 }
@@ -110,6 +111,12 @@ footer{
   .links{
     display: flex;
   }
+
+  h7{
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+  }
   
   /* Estilo para os links */
   .links a {
@@ -120,3 +127,47 @@ footer{
     margin-left: 20px;
     font-weight: bold;
   }
+
+  .form-cadastro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-cadastro input[type="text"],
+.form-cadastro input[type="email"],
+.form-cadastro input[type="number"],
+.form-cadastro input[type="password"] {
+    border-radius: 5px; /* Define a curvatura das bordas */
+    padding: 8px; /* Adiciona um espaço interno para o texto não ficar muito próximo das bordas */
+    border: 1px solid #ccc; /* Adiciona uma borda para destacar as caixas */
+}
+
+.form-cadastro input[type="submit"] {
+    border-radius: 5px; /* Define a curvatura das bordas */
+    padding: 10px 20px; /* Ajusta o preenchimento do botão */
+    border: none; /* Remove a borda padrão */
+    background-color: #333; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+}
+
+
+
+.linha {
+    flex: 0 0 calc(33.33% - 20px); /* Define cada campo para ocupar 33.33% da largura, com um pouco de margem */
+    margin-right: 20px; /* Espaçamento entre os campos */
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+    border-style: ;
+}
+
+.linha:last-child {
+    margin-right: 0; /* Remove a margem do último elemento de cada linha */
+}
+
+/* Estilo para os rótulos (opcional) */
+label {
+    display: block;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
